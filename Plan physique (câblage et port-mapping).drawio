@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.8">
   <diagram name="Page-1" id="qw3HEzxv-JdLIg8q5i_I">
-    <mxGraphModel dx="2084" dy="2291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1737" dy="2104" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="X6GxW74mEFsJ6_o9GuTO-40" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1330" y="-1040" width="700" height="260" as="geometry" />
+          <mxGeometry x="1090" y="-960" width="1280" height="260" as="geometry" />
         </mxCell>
         <mxCell id="X6GxW74mEFsJ6_o9GuTO-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="610" y="-230" width="820" height="450" as="geometry" />
@@ -50,7 +50,10 @@
           <mxGeometry x="2456.5" y="-190" width="390" height="140" as="geometry" />
         </mxCell>
         <mxCell id="X6GxW74mEFsJ6_o9GuTO-39" value="&lt;br&gt;&lt;br&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;VRF&lt;/th&gt;&lt;th&gt;VLAN&lt;/th&gt;&lt;th&gt;Réseau&lt;/th&gt;&lt;th&gt;Usage&lt;/th&gt;&lt;th&gt;Gateway (OPNsense ou FW)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;VRF-WAN&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;td&gt;10.10.0.0/29&lt;/td&gt;&lt;td&gt;Transit FW / Internet interne&lt;/td&gt;&lt;td&gt;10.10.0.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;VRF-USERS&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;200&lt;/td&gt;&lt;td&gt;10.10.16.0/24&lt;/td&gt;&lt;td&gt;Réseau utilisateur / VM front&lt;/td&gt;&lt;td&gt;10.10.16.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;VRF-MGMT&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;300&lt;/td&gt;&lt;td&gt;10.10.32.0/24&lt;/td&gt;&lt;td&gt;Management hyperviseurs / switchs&lt;/td&gt;&lt;td&gt;10.10.32.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;VRF-MGMT&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;310&lt;/td&gt;&lt;td&gt;10.10.33.0/25&lt;/td&gt;&lt;td&gt;iLO / BMC&lt;/td&gt;&lt;td&gt;10.10.33.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;VRF-STORAGE&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;400&lt;/td&gt;&lt;td&gt;10.10.48.0/24&lt;/td&gt;&lt;td&gt;Ceph cluster&lt;/td&gt;&lt;td&gt;(pas routé)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;VRF-STORAGE&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;401&lt;/td&gt;&lt;td&gt;10.10.49.0/24&lt;/td&gt;&lt;td&gt;Ceph public&lt;/td&gt;&lt;td&gt;(pas routé)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;VRF-CLOUD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;500&lt;/td&gt;&lt;td&gt;10.10.64.0/24&lt;/td&gt;&lt;td&gt;OpenStack internal/control&lt;/td&gt;&lt;td&gt;10.10.64.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;VRF-CLOUD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;501&lt;/td&gt;&lt;td&gt;10.10.65.0/24&lt;/td&gt;&lt;td&gt;Services infra internes&lt;/td&gt;&lt;td&gt;10.10.65.1&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1400" y="-1015" width="560" height="210" as="geometry" />
+          <mxGeometry x="1160" y="-935" width="560" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="X6GxW74mEFsJ6_o9GuTO-41" value="&lt;br&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Équipement&lt;/th&gt;&lt;th&gt;VLAN Mgmt&lt;/th&gt;&lt;th&gt;IP&lt;/th&gt;&lt;th&gt;Rôle&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Switch Admin&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;300&lt;/td&gt;&lt;td&gt;10.10.32.2&lt;/td&gt;&lt;td&gt;mgmt switch admin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Switch WAN&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;300&lt;/td&gt;&lt;td&gt;10.10.32.4&lt;/td&gt;&lt;td&gt;mgmt switch WAN&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Switch Storage&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;300&lt;/td&gt;&lt;td&gt;10.10.32.5&lt;/td&gt;&lt;td&gt;mgmt switch Storage&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="-885" width="370" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
